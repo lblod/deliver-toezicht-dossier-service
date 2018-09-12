@@ -1,0 +1,23 @@
+{
+  "name": "deliver-toezicht-dossier-service",
+  "version": "0.0.0",
+  "description": "Service to deliver toezicht dossiers to the backoffice",
+  "scripts": {
+    "dev": "nodemon server.js --watch src/ --exec babel-node",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lblod/deliver-toezicht-dossier-service"
+  },
+  "keywords": [
+    "mu-semtech",
+    "lblod"
+  ],
+  "dependencies": {
+    "cron": "^1.4.1",
+    "ssh2-sftp-client": "^3.1.0"
+  },
+  "author": "redpencil.io",
+  "license": "MIT"
+}

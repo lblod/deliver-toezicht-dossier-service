@@ -47,7 +47,7 @@ const uploadPackage = async function( connection, filePath, targetPath ){
     await sftp.connect(connection);
     if (process.env.ENABLE_CREATE_TARGET_DIR)
       await sftp.mkdir(path.dirname(targetPath), true);
-    await sftp.put(filePath, targetPath);
+    await sftp.put(filePath, targetPath, { concurrency: 1 });
   }
   finally{
     await sftp.end();

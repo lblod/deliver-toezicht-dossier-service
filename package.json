@@ -1,6 +1,6 @@
 {
   "name": "deliver-toezicht-dossier-service",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Service to deliver toezicht dossiers to the backoffice",
   "scripts": {
     "dev": "nodemon server.js --watch src/ --exec babel-node",
